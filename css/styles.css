@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+main {
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #02a7a2;
+}
+
+#search {
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.login-btn {
+  color: black;
+  background: white;
+}
+
+.signup-btn {
+  color: white;
+  background: #02a7a2;
+}
+
+.auth-page {
+  background: white;
+  border: 1px solid black;
+
+  padding: 3rem 4.0625rem 2.875rem 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  top: 10rem;
+  left: 25rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0px 4px 105px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dividers {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.auth-page-btns {
+  display: flex;
+  /* padding: 3rem 4.0625rem 2.875rem 4rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-btns {
+  padding: 3rem 4rem 3rem 6rem;
+}
+
+#google-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#big-signup-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

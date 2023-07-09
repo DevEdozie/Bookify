@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+
+        <form id="search-form">
+          <input
+            type="text"
+            name="search"
+            placeholder=" 🔍Search"
+            id="search"
+          />
+        </form>
+
+        <button class="button login-btn">Log in</button>
+        <button class="button signup-btn">Sign up</button>
+      </nav>
+    </header>
+    <main>
+      <section class="auth-page">
+        <div class="auth-page-btns">
+          <button
+            class="button auth-btns signup-btn"
+            id="auth-page-sign-up-btn"
+          >
+            Sign up
+          </button>
+          <button class="button auth-btns login-btn" id="auth-page-log-in-btn">
+            Log in
+          </button>
+        </div>
+        <p>Glad to have you here to an</p>
+        <h2>Create Account</h2>
+        <p>Continue with</p>
+        <button id="google-btn">
+          <img src="assets/google-logo.png" alt="Google Logo" />
+          Signup with Google
+        </button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="dividers">
+          <img src="assets/divider.png" alt="Divider" />
+          <p>OR</p>
+          <img src="assets/divider.png" alt="Divider" />
+        </div>
+
+        <fieldset>
+          <legend>Email</legend>
+          <label>
+            <img src="assets/fi_mail.png" alt="Mail" />
+            <input type="text" placeholder="Your Email Address" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <label>
+            <img src="assets/lock.png" alt="Lock" />
+            <input type="text" placeholder="Your Password" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <label>
+            <img src="assets/fi_mail.png" alt="Mail" />
+            <input type="text" placeholder="Your Password" />
+          </label>
+        </fieldset>
+
+        <button class="button signup-btn" id="big-signup-btn">Sign up</button>
+        <p>Forgot Password</p>
+      </section>
+    </main>
+  </body>
+</html>
