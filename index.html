@@ -1,111 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
 
 
 
-    ">
+    "
+    />
     <title>Bookify</title>
     <link rel="stylesheet" href="css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Logo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Cart</a></li>
-            </ul>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
 
-            <form id="search-form">
-                <!-- <img src="assets/search.png" alt="search icon" /> -->
-                <input type="text" name="search" placeholder=" Search" id="search" />
-            </form>
+        <form id="search-form">
+          <!-- <img src="assets/search.png" alt="search icon" /> -->
+          <input type="text" name="search" placeholder=" Search" id="search" />
+        </form>
 
-
-            <div class="button_container">
-                <button class=" button login-btn">Log in</button>
-                <button class="button signup-btn">Sign up</button>
-            </div>
-        </nav>
+        <div class="button_container">
+          <button class="button login-btn">Log in</button>
+          <button class="button signup-btn">Sign up</button>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="auth-page">
-            <div class="auth-page-btns">
-                <button class="auth-btns signup_btn" id="auth-page-sign-up-btn">
+      <section class="auth-page">
+        <div class="auth-page-btns">
+          <!--TOGGLE BUTTONS-->
+          <button class="auth-btns signup_btn" id="auth-page-sign-up-btn">
             Sign up
           </button>
-                <button class="auth-btns login_btn" id="auth-page-log-in-btn">
+          <button class="auth-btns login_btn" id="auth-page-log-in-btn">
             Log in
           </button>
+        </div>
+
+        <!--SIGNUP FORM SECTION-->
+        <div id="signup-page">
+          <div class="auth-body">
+            <div class="auth-body-text">
+              <p>Glad to have you here</p>
+              <h2>Create an Account</h2>
+              <!-- <span>Continue with</span> -->
             </div>
-            <div class="auth-body">
-                <div class="auth-body-text">
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <!-- <div class="google">
+              <button id="google-btn">
+                <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+                Google
+              </button>
+            </div> -->
 
-                    <p>Glad to have you here</p>
-                    <h2>Create an Account</h2>
-                    <span>Continue with</span>
+            <!-- <div class="dividers">
+              <p>OR</p>
+            </div> -->
+            <p class="email_pass">
+              Enter your email and password to create an account
+            </p>
+            <form class="auth-forms" id="sign_up_form">
+              <fieldset>
+                <!-- <legend>Email</legend> -->
 
+                <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
                 </div>
-                <div class="google">
-                    <button id="google-btn">
-                    <img src="assets/google-logo.png" alt="Google Logo" /> Signup with Google
-                    </button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
+              </fieldset>
+              <fieldset>
+                <!-- <legend>Password</legend> -->
+
+                <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-1"
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                  />
                 </div>
-                <div class="dividers">
+              </fieldset>
+              <p class="password-error-message" id="password-1-err">
+                Password must be at least
+                <span id="8-chars-1">8 Characters</span>
+                and must contain at least a
+                <span id="capt-1">Capital Letter</span>, a
+                <span id="num-1">Number</span> and a
+                <span id="special-char-1">Special Character</span>.
+              </p>
 
-                    <p>OR</p>
+              <fieldset>
+                <!-- <legend>Password</legend> -->
 
+                <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-2"
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                  />
                 </div>
-                <p class="email_pass">Enter your email and password to create an account </p>
-                <form id="sign_up_form">
-                    <fieldset>
-                        <!-- <legend>Email</legend> -->
+              </fieldset>
+              <p class="password-error-message" id="password-2-err">
+                Password must be at least
+                <span id="8-chars-2">8 Characters</span>
+                and must contain at least a
+                <span id="capt-2">Capital Letter</span>, a
+                <span id="num-2">Number</span> and a
+                <span id="special-char-2">Special Character</span>.
+              </p>
 
-                        <img src="assets/fi_mail.png" alt="Mail" />
-                        <div class="field">
+              <button class="button signup-btn big-btn" id="big-signup-btn">
+                Sign up
+              </button>
+              <p class="forgot">Forgot Password</p>
+            </form>
+          </div>
+        </div>
 
-                            <label>Email</label>
-                            <input type="email" placeholder="Your Email Address" required/>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <!-- <legend>Password</legend> -->
-
-                        <img src="assets/lock.png" alt="Lock" />
-                        <div class="field">
-                            <label>Password</label>
-                            <input type="password" placeholder="Your Password" required/>
-                        </div>
-
-                    </fieldset>
-                    <fieldset>
-                        <!-- <legend>Password</legend> -->
-
-                        <img src="assets/fi_mail.png" alt="Mail" />
-                        <div class="field">
-                            <label>Password</label>
-                            <input type="password" placeholder="Your Password" required/>
-                        </div>
-                    </fieldset>
-
-                    <button class="button signup-btn" id="big-signup-btn">Sign up</button>
-                    <p class="forgot">Forgot Password</p>
-                </form>
+        <!-- LOGIN-->
+        <div id="login-page">
+          <div class="auth-body">
+            <div class="auth-body-text">
+              <p>Welcome!!!</p>
+              <!-- <span>Continue with</span> -->
             </div>
+
+            <!-- <div class="google"> 
+       <button id="google-btn">
+              <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+              Google
+            </button>
+          </div> -->
+
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <!-- <div class="dividers">
+              <p>OR</p>
+            </div> -->
+            <p class="email_pass">
+              Enter your email and password to create an account
+            </p>
+            <form class="auth-forms" id="login_form">
+              <fieldset>
+                <!-- <legend>Email</legend> -->
+
+                <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <!-- <legend>Password</legend> -->
+
+                <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input type="password" placeholder="Your Password" required />
+                </div>
+              </fieldset>
+
+              <button class="button active-btn big-btn" id="big-login-btn">
+                Log in
+              </button>
+              <p class="forgot">Forgot Password</p>
+            </form>
+          </div>
+        </div>
+
+        <!--AUTH SUCCESS SECTION-->
+        <section id="auth-success-page">
+          <div class="auth-success-body">
+            <img
+              src="assets/tick-square.png"
+              alt="Tick Square"
+              id="tick-square"
+            />
+            <p>Awesome!</p>
+
+            <h2>Successfully Signed in</h2>
+
+            <button class="button" id="return-to-home">Return to Home</button>
+          </div>
         </section>
-    </main>
-</body>
+      </section>
 
+      <!--SIGNUP PAGE-->
+      <!-- <section class="auth-page signup-page">
+        <div class="auth-page-btns">
+          <!--ACTIVE BUTTON-->
+      <!-- <button
+            class="auth-btns signup_btn active-btn"
+            id="auth-page-sign-up-btn"
+          >
+            Sign up
+          </button>
+          <button class="auth-btns login_btn" id="auth-page-log-in-btn">
+            Log in
+          </button>
+        </div>
+
+        <div class="signup-form-section">
+          <div class="auth-body">
+            <div class="auth-body-text">
+              <p>Glad to have you here</p>
+              <h2>Create an Account</h2> -->
+      <!-- <span>Continue with</span> -->
+      <!-- </div>
+            <div class="google"> -->
+      <!-- <button id="google-btn">
+                <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+                Google
+              </button> -->
+      <!-- <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+            <div class="dividers">
+              <p>OR</p>
+            </div>
+            <p class="email_pass">
+              Enter your email and password to create an account
+            </p>
+            <form id="sign_up_form">
+              <fieldset>
+                <!-- <legend>Email</legend> -->
+
+      <!-- <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset> -->
+      <!-- <legend>Password</legend> -->
+
+      <!-- <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-1"
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <p class="password-error-message" id="password-1-err">
+                Password must be at least
+                <span id="8-chars-1">8 Characters</span>
+                and must contain at least a
+                <span id="capt-1">Capital Letter</span>, a
+                <span id="num-1">Number</span> and a
+                <span id="special-char-1">Special Character</span>.
+              </p> -->
+      <!-- <fieldset> -->
+      <!-- <legend>Password</legend> -->
+
+      <!-- <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-2"
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <p class="password-error-message" id="password-2-err">
+                Password must be at least
+                <span id="8-chars-2">8 Characters</span>
+                and must contain at least a
+                <span id="capt-2">Capital Letter</span>, a
+                <span id="num-2">Number</span> and a
+                <span id="special-char-2">Special Character</span>.
+              </p> -->
+
+      <!-- <button class="button signup-btn" id="big-signup-btn">
+                Sign up
+              </button>
+              <p class="forgot">Forgot Password</p>
+            </form>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- LOGIN-->
+      <!-- <section class="auth-page login-page">
+        <div class="auth-page-btns">
+          <button class="auth-btns signup_btn" id="auth-page-sign-up-btn">
+            Sign up
+          </button>
+          
+          <button class="auth-btns login_btn" id="auth-page-log-in-btn">
+            Log in
+          </button>
+        </div> -->
+
+      <!-- <div class="login-form-section"></div> -->
+
+      <!-- <div class="auth-body">
+          <div class="auth-body-text">
+            <p>Welcome!!!</p> -->
+      <!-- <span>Continue with</span> -->
+      <!-- </div>
+          <div class="google"> -->
+      <!-- <button id="google-btn">
+              <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+              Google
+            </button> -->
+      <!-- <p>Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+          <div class="dividers">
+            <p>OR</p>
+          </div>
+          <p class="email_pass">
+            Enter your email and password to create an account
+          </p>
+          <form id="sign_up_form">
+            <fieldset> -->
+      <!-- <legend>Email</legend> -->
+
+      <!-- <img src="assets/fi_mail.png" alt="Mail" />
+              <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="Your Email Address" required />
+              </div>
+            </fieldset>
+            <fieldset> -->
+      <!-- <legend>Password</legend> -->
+
+      <!-- <img src="assets/lock.png" alt="Lock" />
+              <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="Your Password" required />
+              </div>
+            </fieldset>
+
+            <button class="button active-btn" id="big-login-btn">Log in</button>
+            <p class="forgot">Forgot Password</p>
+          </form>
+        </div>
+      </section> -->
+
+      <!--AUTH SUCCESS SESSION-->
+      <!-- <section class="auth-page auth-success-page">
+        <div class="auth-success-body">
+          <img
+            src="assets/tick-square.png"
+            alt="Tick Square"
+            id="tick-square"
+          />
+          <p>Awesome!</p>
+
+          <h2>Successfully Signed in</h2>
+
+          <button class="button" id="return-to-home">Return to Home</button>
+        </div>
+      </section>  -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
