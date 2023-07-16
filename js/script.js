@@ -18,8 +18,6 @@ const passOneError = document.getElementById("password-1-err");
 const passwordTwo = document.getElementById("password-2");
 const passTwoError = document.getElementById("password-2-err");
 
-const bigSignupBtn = document.getElementById(".big-signup-btn");
-
 // Toggle sections
 // USE ID
 const signUpToggleButton = document.getElementById("auth-page-sign-up-btn");
@@ -28,6 +26,39 @@ const loginToggleButton = document.getElementById("auth-page-log-in-btn");
 const signUpPage = document.getElementById("signup-page");
 const loginPage = document.getElementById("login-page");
 const authSuccessPage = document.getElementById("auth-success-page");
+// PAGE BUTTONS
+const bigSignupBtn = document.getElementById("big-signup-btn");
+const bigLoginBtn = document.getElementById("big-login-btn");
+const authPageButtons = document.querySelector(".auth-page-btns");
+
+// SET LISTENERS
+bigSignupBtn.addEventListener("click", signUpUser);
+bigLoginBtn.addEventListener("click", loginUser);
+
+// PAGE BUTTON FUNCTIONS
+function signUpUser() {
+  // GET EMAIL
+  // GET FIRST PASSWORD
+  // GET SECOND PASSWORD
+  // AUTHENTICATE
+  // NAVIGATE TO AUTH-SUCCESS PAGE
+  navToAuthSuccess();
+}
+
+function loginUser() {
+  // GET EMAIL
+  // GET PASSWORD
+  // AUTHENTICATE
+  // NAVIGATE TO AUTH-SUCCESS PAGE
+  navToAuthSuccess();
+}
+
+function navToAuthSuccess() {
+  authPageButtons.style.display = "none";
+  loginPage.style.display = "none";
+  signUpPage.style.display = "none";
+  authSuccessPage.style.display = "block";
+}
 
 // Toggle
 signUpToggleButton.addEventListener("click", function () {
