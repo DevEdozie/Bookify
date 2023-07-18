@@ -23,6 +23,9 @@ const passTwoError = document.getElementById("password-2-err");
 const signUpToggleButton = document.getElementById("auth-page-sign-up-btn");
 const loginToggleButton = document.getElementById("auth-page-log-in-btn");
 // PAGES
+const landingPage = document.getElementById("landing-page");
+const footerSection = document.getElementById("footer-section");
+const authPage = document.getElementById("auth-page");
 const signUpPage = document.getElementById("signup-page");
 const loginPage = document.getElementById("login-page");
 const authSuccessPage = document.getElementById("auth-success-page");
@@ -31,9 +34,17 @@ const bigSignupBtn = document.getElementById("big-signup-btn");
 const bigLoginBtn = document.getElementById("big-login-btn");
 const authPageButtons = document.querySelector(".auth-page-btns");
 
+// GET STARTED BUTTON
+const getStartedBtn = document.getElementById("get-started-btn");
 // SET LISTENERS
 bigSignupBtn.addEventListener("click", signUpUser);
 bigLoginBtn.addEventListener("click", loginUser);
+
+getStartedBtn.addEventListener("click", function () {
+  authPage.style.display = "flex";
+  landingPage.style.display = "none";
+  footerSection.style.display = "none";
+});
 
 // PAGE BUTTON FUNCTIONS
 function signUpUser() {
