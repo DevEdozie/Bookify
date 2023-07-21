@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details Page</title>
+    <title>The Gene</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,47 +30,50 @@
 
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
         </ul>
 
         <form id="search-form">
           <label for="search"
-            ><img src="assets/search-icon.png" alt="Search Icon"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
           /></label>
           <input type="text" name="search" placeholder=" Search" id="search" />
         </form>
 
-        <div class="button_container">
+        <div id="header-auth-btns" class="button_container">
           <button class="button login-btn">Log in</button>
           <button class="button signup-btn">Sign up</button>
         </div>
 
-        <div class="user-icon">
-          <img src="assets/user-icon.png" alt="User Icon" id="user-icon-img" />
-        </div>
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
       </nav>
     </header>
 
-    <main class="product-details-page">
+    <main class="product-page">
       <section class="book-details">
         <div class="book-details-img">
-          <img
-            src="assets/chemistry-of-the-environment.png"
-            alt="Book Image"
-            class="book-img"
-          />
+          <img src="assets/gene-book.png" alt="Book Image" class="book-img" />
         </div>
 
         <div class="book-details-desc">
-          <h1 class="book-title">Chemistry of the Environment</h1>
+          <h1 id="book-details-title" class="book-title">The Gene</h1>
           <p>
             By
-            <span class="book-author"
-              >Thomas G. Spiro Kethleen L. Pervis-Roberts William
-              M.Stigani</span
-            >
+            <span class="book-author">Siddhartha Mukherjee</span>
           </p>
           <ul class="book-stars">
             <li><img src="assets/star.png" alt="Star" /></li>
@@ -99,13 +102,9 @@
           <div class="book-details-about-book">
             <h2>About the Book</h2>
             <p class="about-book">
-              Chemistry of the Environment, 3rd Edition, is a concise, clear and
-              current account of todays environmental issues and the science one
-              needs to understand them. This intermediate-level text, which
-              recommends General Chemistry as a prerequisite, systematically
-              lays out themes of sustainability, atmosphere, hydrosphere,
-              lithosphere and biospheres, while stressing the interconnectedness
-              of environmental problems and solutions <b>...more</b>
+              The Gene: An Intimate History is a book written by Siddhartha
+              Mukherjee, an Indian-born American physician and oncologist. It
+              was published on 17 May 2016 by Scribner.
             </p>
           </div>
         </div>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company of One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+    "
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="assets/bookify-logo.png" alt="Bookify Logo" />
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+        <form id="search-form">
+          <label for="search"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
+          /></label>
+          <input type="text" name="search" placeholder=" Search" id="search" />
+        </form>
+
+        <div id="header-auth-btns" class="button_container">
+          <button class="button login-btn">Log in</button>
+          <button class="button signup-btn">Sign up</button>
+        </div>
+
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+
+    <main class="product-page">
+      <section class="book-details">
+        <div class="book-details-img">
+          <img
+            src="assets/company-of-one-book.png"
+            alt="Book Image"
+            class="book-img"
+          />
+        </div>
+
+        <div class="book-details-desc">
+          <h1 id="book-details-title" class="book-title">Company of one</h1>
+          <p>
+            By
+            <span class="book-author">Cheikh Anta Diop</span>
+          </p>
+          <ul class="book-stars">
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+          </ul>
+          <div class="analytics">
+            <div class="prices">
+              <p class="new-price">N2500</p>
+              <p class="old-price">N5000</p>
+            </div>
+            <div class="counter">
+              <div class="box operator minus-sign"><p>-</p></div>
+              <div class="box count-display">
+                <p class="count-display-no"></p>
+              </div>
+              <div class="box operator plus-sign"><p>+</p></div>
+            </div>
+          </div>
+
+          <div class="book-details-btns">
+            <button class="button" id="buy-now-btn">Buy Now</button>
+            <button class="button" id="add-to-cart-btn">Add to Cart</button>
+          </div>
+          <div class="book-details-about-book">
+            <h2>About the Book</h2>
+            <p class="about-book">
+              "Precolonial Black Africa is one of three major works by Cheikh
+              Anta Diop that attempts to reconstruct African history and the
+              black contribution to the foundations of Western civilization. In
+              this book, Diop compares the political and social systems of
+              Europe and black Africa from antiquity to the formation of modern
+              states. Throughout, ...More",
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--CUSTOMER REVIEWS-->
+      <section class="customer-reviews">
+        <ul class="customer-review-list">
+          <li><h2 class="customer-reviews-heading">Customer Reviews</h2></li>
+          <li>
+            <div class="customer-review">
+              <div class="customer-review-title">
+                <div class="customer-data">
+                  <img
+                    class="customer-img"
+                    src="assets/rukayat-img.png"
+                    alt="Rukayat"
+                  />
+                  <h3 class="customer-name">
+                    Rukayat <br />
+                    2 days ago
+                  </h3>
+                </div>
+                <div class="customer-rating">
+                  <img src="assets/star.png" alt="Star Image" />
+                  <p class="customer-review-rating-val">4.4</p>
+                </div>
+              </div>
+              <div class="customer-review-desc">
+                <p>
+                  “No other text in environmental chemistry so nicely balances
+                  breadth, depth and readability.”
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="customer-review">
+              <div class="customer-review-title">
+                <div class="customer-data">
+                  <img
+                    class="customer-img"
+                    src="assets/david-img.png"
+                    alt="David"
+                  />
+                  <h3 class="customer-name">
+                    David <br />
+                    4 days ago
+                  </h3>
+                </div>
+                <div class="customer-rating">
+                  <img src="assets/star.png" alt="Star Image" />
+                  <p class="customer-review-rating-val">4.4</p>
+                </div>
+              </div>
+              <div class="customer-review-desc">
+                <p>
+                  “I very much congratulate the authors. This is by far the best
+                  environmental chemistry text that I have read.”
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="customer-review">
+              <div class="customer-review-title">
+                <div class="customer-data">
+                  <img
+                    class="customer-img"
+                    src="assets/samuel-img.png"
+                    alt="Samuel"
+                  />
+                  <h3 class="customer-name">
+                    Samuel <br />
+                    5 days ago
+                  </h3>
+                </div>
+                <div class="customer-rating">
+                  <img src="assets/star.png" alt="Star Image" />
+                  <p class="customer-review-rating-val">4.4</p>
+                </div>
+              </div>
+              <div class="customer-review-desc">
+                <p>
+                  “This comprehensive new edition is well written and
+                  balanced…Summing up: Recommended for all undergraduate
+                  students and general readers.”
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="customer-reviews-ratings">
+          <div class="customer-reviews-ratings-total-val">
+            <h2>4.7</h2>
+            <p id="div5"><b>/5</b></p>
+          </div>
+          <ul class="book-stars">
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+            <li><img src="assets/star.png" alt="Star" /></li>
+          </ul>
+          <h3 class="customer-reviews-rating">10,500 ratings</h3>
+          <ul class="customer-reviews-ratings-stars">
+            <li class="ratings">
+              <img src="assets/star.png" alt="Star" />
+              <img src="assets/rate-1.png" alt="Rate 1" />
+            </li>
+            <li class="ratings">
+              <img src="assets/star.png" alt="Star" />
+              <img src="assets/rate-2.png" alt="Rate 2" />
+            </li>
+            <li class="ratings">
+              <img src="assets/star.png" alt="Star" />
+              <img src="assets/rate-3.png" alt="Rate 3" />
+            </li>
+            <li class="ratings">
+              <img src="assets/star.png" alt="Star" />
+              <img src="assets/rate-4.png" alt="Rate 4" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section
+        id="bottom-nav
+      "
+      >
+        <div class="bottom-nav-top">
+          <div class="bottom-list product">
+            <h3>Product</h3>
+            <ul class="product-list">
+              <li class="product-list-item">Pricing</li>
+              <li class="product-list-item">Solutions</li>
+              <li class="product-list-item">Education</li>
+              <li class="product-list-item">Team plans</li>
+            </ul>
+          </div>
+          <div class="bottom-list about-us">
+            <h3>About Us</h3>
+            <ul class="about-us-list">
+              <li class="about-us-list-item">About</li>
+              <li class="about-us-list-item">Branding</li>
+              <li class="about-us-list-item">Newsroom</li>
+              <li class="about-us-list-item">Partnerships</li>
+              <li class="about-us-list-item">Affilates</li>
+              <li class="about-us-list-item">Careers</li>
+            </ul>
+          </div>
+          <div class="bottom-list help-support">
+            <h3>Help and support</h3>
+            <ul class="help-support-list">
+              <li class="help-support-list-item">Help center</li>
+              <li class="help-support-list-item">Contact us</li>
+              <li class="help-support-list-item">Privacy &amp; Terms</li>
+              <li class="help-support-list-item">Safety information</li>
+              <li class="help-support-list-item">Sitemap</li>
+            </ul>
+          </div>
+          <div class="bottom-list community">
+            <h3>Community</h3>
+            <ul class="community-list">
+              <li class="community-list-item">Agencies</li>
+              <li class="community-list-item">Freelancers</li>
+              <li class="community-list-item">Engineers</li>
+            </ul>
+          </div>
+          <div class="download-sites">
+            <div class="download-sites-btns" id="app-store-download">
+              <img
+                src="assets/app-store-download.png"
+                alt="App Store Download"
+              />
+            </div>
+            <div class="download-sites-btns" id="google-play-download">
+              <img
+                src="assets/google-play-download.png"
+                alt="Google Play Download"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav-bottom">
+          <p id="copyright">@copyright 2022</p>
+          <ul class="aid-links-list">
+            <li class="aid-links-list-item">Help</li>
+            <li class="aid-link-list-item">Privacy</li>
+            <li class="aid-link-list-item">Terms</li>
+          </ul>
+
+          <div class="social-media-icons">
+            <img
+              src="assets/facebook-logo.png"
+              alt="Facebook Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/twitter-logo.png"
+              alt="Twitter Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/instagram-logo.png"
+              alt="Instagram Logo"
+              class="social-media-icon"
+            />
+          </div>
+          <div class="dropdown">
+            <p>
+              English(United States)
+              <img src="assets/dropdown-icon.png" alt="Dropdown Icon" />
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

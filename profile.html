@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+
+
+
+    "
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          id="bookify-logo"
+          src="assets/bookify-logo.png"
+          alt="Bookify Logo"
+        />
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="product-details-page.html">Home</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+        <form id="search-form">
+          <label for="search"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
+          /></label>
+          <input type="text" name="search" placeholder=" Search" id="search" />
+        </form>
+
+        <div id="header-auth-btns" class="button_container">
+          <button class="button login-btn">Log in</button>
+          <button class="button signup-btn">Sign up</button>
+        </div>
+
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="profile-page-section">
+        <div>
+          <div class="user_profile">
+            <img src="assets/user-profile-icon.png" alt="user Profile icon" />
+
+            <h2>My Profile</h2>
+          </div>
+        </div>
+        <section class="profile_page">
+          <form class="sign_up_form">
+            <!--PAGE HEADER-->
+            <div class="profile-page-header">
+              <h3 class="profile-page-header">Profile Details</h3>
+              <hr width="400px" color="#dbdbdb" />
+            </div>
+
+            <div class="user_name">
+              <h5 style="align-items: flex-start">User Name</h5>
+            </div>
+            <div>
+              <fieldset>
+                <img src="assets/user-icon-dark.png" alt="icon" />
+                <div class="field">
+                  <label>Username</label>
+                  <input type="text " placeholder="David" required />
+                </div>
+                <button class="btn-edit">
+                  <img src="assets/edit-icon.png" alt="edit" />Edit
+                </button>
+              </fieldset>
+            </div>
+            <div class="user_name">
+              <h5>Email</h5>
+            </div>
+            <fieldset>
+              <img src="assets/user-icon-dark.png" alt="icon" />
+              <div class="field">
+                <label>Email</label>
+                <input type="email " placeholder="david@gmail.com" required />
+              </div>
+              <button class="btn-edit">
+                <img src="assets/edit-icon.png" alt="edit" />Edit
+              </button>
+            </fieldset>
+
+            <div class="user_name">
+              <h5>Password</h5>
+            </div>
+            <fieldset>
+              <img src="assets/shield-icon.png" alt="Shield Icon" />
+              <div class="field password">
+                <label>Password</label>
+                <input type="password " placeholder="............ " required />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+        <section class="profile_page">
+          <form class="sign_up_form">
+            <div class="profile-page-header">
+              <h3 class="profile-page-header">Change Password</h3>
+              <hr width="400px" color="#dbdbdb" />
+            </div>
+            <fieldset>
+              <img src="assets/shield-icon.png" alt="Shield Icon" />
+              <div class="field password">
+                <label>Old Password</label>
+                <input type="text" placeholder="Placeholder" required />
+              </div>
+            </fieldset>
+            <fieldset>
+              <img src="assets/shield-icon.png" alt="Shield Icon" />
+              <div class="field password">
+                <label>New Password</label>
+                <input type="text" placeholder="Placeholder" required />
+              </div>
+            </fieldset>
+
+            <button class="password_btn">Change Password</button>
+
+            <button class="logout_btn">
+              <img src="assets/log-out-icon.svg" alt="Logout Icon" />
+              <p>Log Out</p>
+            </button>
+          </form>
+        </section>
+        <section class="home-btn-section">
+          <a href="index.html">
+            <button class="home_btn">
+              <img src="assets/home-icon.png" alt="Home Icon" />
+              <p>Back to Home</p>
+            </button>
+          </a>
+        </section>
+      </section>
+    </main>
+    <footer id="footer-section">
+      <section
+        id="bottom-nav
+        "
+      >
+        <div class="bottom-nav-top">
+          <div class="bottom-list product">
+            <h3>Product</h3>
+            <ul class="product-list">
+              <li class="product-list-item">Pricing</li>
+              <li class="product-list-item">Solutions</li>
+              <li class="product-list-item">Education</li>
+              <li class="product-list-item">Team plans</li>
+            </ul>
+          </div>
+          <div class="bottom-list about-us">
+            <h3>About Us</h3>
+            <ul class="about-us-list">
+              <li class="about-us-list-item">About</li>
+              <li class="about-us-list-item">Branding</li>
+              <li class="about-us-list-item">Newsroom</li>
+              <li class="about-us-list-item">Partnerships</li>
+              <li class="about-us-list-item">Affilates</li>
+              <li class="about-us-list-item">Careers</li>
+            </ul>
+          </div>
+          <div class="bottom-list help-support">
+            <h3>Help and support</h3>
+            <ul class="help-support-list">
+              <li class="help-support-list-item">Help center</li>
+              <li class="help-support-list-item">Contact us</li>
+              <li class="help-support-list-item">Privacy &amp; Terms</li>
+              <li class="help-support-list-item">Safety information</li>
+              <li class="help-support-list-item">Sitemap</li>
+            </ul>
+          </div>
+          <div class="bottom-list community">
+            <h3>Community</h3>
+            <ul class="community-list">
+              <li class="community-list-item">Agencies</li>
+              <li class="community-list-item">Freelancers</li>
+              <li class="community-list-item">Engineers</li>
+            </ul>
+          </div>
+          <div class="download-sites">
+            <div class="download-sites-btns" id="app-store-download">
+              <img
+                src="assets/app-store-download.png"
+                alt="App Store Download"
+              />
+            </div>
+            <div class="download-sites-btns" id="google-play-download">
+              <img
+                src="assets/google-play-download.png"
+                alt="Google Play Download"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav-bottom">
+          <p id="copyright">@copyright 2022</p>
+          <ul class="aid-links-list">
+            <li class="aid-links-list-item">Help</li>
+            <li class="aid-link-list-item">Privacy</li>
+            <li class="aid-link-list-item">Terms</li>
+          </ul>
+
+          <div class="social-media-icons">
+            <img
+              src="assets/facebook-logo.png"
+              alt="Facebook Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/twitter-logo.png"
+              alt="Twitter Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/instagram-logo.png"
+              alt="Instagram Logo"
+              class="social-media-icon"
+            />
+          </div>
+          <div class="dropdown">
+            <p>
+              English(United States)
+              <img src="assets/dropdown-icon.png" alt="Dropdown Icon" />
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

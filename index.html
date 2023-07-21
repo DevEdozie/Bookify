@@ -37,25 +37,35 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li><a href="product-details-page.html">Home</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
         </ul>
 
         <form id="search-form">
           <label for="search"
-            ><img src="assets/search-icon.png" alt="Search Icon"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
           /></label>
           <input type="text" name="search" placeholder=" Search" id="search" />
         </form>
 
-        <div class="button_container">
+        <div id="header-auth-btns" class="button_container">
           <button class="button login-btn">Log in</button>
           <button class="button signup-btn">Sign up</button>
         </div>
 
-        <div class="user-icon">
-          <img src="assets/user-icon.png" alt="User Icon" id="user-icon-img" />
-        </div>
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
       </nav>
     </header>
     <main id="main-section">
@@ -120,7 +130,7 @@
                   received critical acclaim and won the Women's Prize for
                   Fiction in 2007.
                 </p>
-                <button class="cart_btn">
+                <button class="action_btn cart_btn">
                   <i class="fas fa-cart-shopping"></i> Add to Cart
                 </button>
               </div>
@@ -168,7 +178,7 @@
                   of Europe and black Africa from antiquity to the formation of
                   modern states.
                 </p>
-                <button class="cart_btn">
+                <button class="action_btn cart_btn">
                   <i class="fas fa-cart-shopping"></i> Add to Cart
                 </button>
               </div>
@@ -187,9 +197,11 @@
               />
               <div style="padding: 0px 15px">
                 <h4>Art</h4>
-                <button class="science_btn">
-                  <i class="fas fa-globe"></i> Browse
-                </button>
+                <a href="science-page.html">
+                  <button class="action_btn science_btn">
+                    <i class="fas fa-globe"></i> Browse
+                  </button>
+                </a>
               </div>
             </div>
             <div class="column card">
@@ -200,9 +212,11 @@
               />
               <div style="padding: 0px 15px">
                 <h4>Science</h4>
-                <button class="art_btn">
-                  <i class="fas fa-globe"></i> Browse
-                </button>
+                <a href="art-page.html">
+                  <button class="action_btn art_btn">
+                    <i class="fas fa-globe"></i> Browse
+                  </button>
+                </a>
               </div>
             </div>
           </div>
