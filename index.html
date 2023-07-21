@@ -3,84 +3,521 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+
+
+
+    "
+    />
     <title>Bookify</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <header>
-      <h1>Logo</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Cart</a></li>
+      <a href="index.html">
+        <img
+          id="bookify-logo"
+          src="assets/bookify-logo.png"
+          alt="Bookify Logo"
+        />
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="product-details-page.html">Home</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
         </ul>
 
         <form id="search-form">
-          <input
-            type="text"
-            name="search"
-            placeholder=" 🔍Search"
-            id="search"
-          />
+          <label for="search"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
+          /></label>
+          <input type="text" name="search" placeholder=" Search" id="search" />
         </form>
 
-        <button class="button login-btn">Log in</button>
-        <button class="button signup-btn">Sign up</button>
+        <div id="header-auth-btns" class="button_container">
+          <button class="button login-btn">Log in</button>
+          <button class="button signup-btn">Sign up</button>
+        </div>
+
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
       </nav>
     </header>
-    <main>
-      <section class="auth-page">
+    <main id="main-section">
+      <!--LANDING PAGE START-->
+
+      <section id="landing-page">
+        <section class="books">
+          <div class="access">
+            <h1>
+              Access To Thousands of <br />
+              Discounted eBooks <br />
+              Download or Read Online
+            </h1>
+            <button class="action_btn" id="get-started-btn">Get Started</button>
+          </div>
+        </section>
+
+        <div class="container">
+          <h2>Suggested Books</h2>
+
+          <div class="row card w70">
+            <div>
+              <img
+                class="column_photo"
+                src="assets/half-of-a-yellow-sun-book.png"
+                alt="Half of a Yellow Sun"
+              />
+            </div>
+
+            <div class="column">
+              <div class="halfof">
+                <h4>Half of a Yellow Sun</h4>
+                <span>By Chimamanda Ngozi Adichie</span>
+              </div>
+              <!-- <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> -->
+
+              <ul class="book-stars">
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+              </ul>
+
+              <p>
+                <span class="digits">NGN2,500 </span
+                ><span class="smalldigits">N5,000</span>
+                <button class="qty_btn">
+                  <img src="./assets/qty_icon.png" /> Qty:
+                </button>
+              </p>
+              <div class="aboutbook1">
+                <h5>About Book</h5>
+                <p>
+                  Half of a Yellow Sun is a novel by Nigerian author Chimamanda
+                  Ngozi Adichie. Published in 2006 by 4th Estate in London. The
+                  novel tells the story of the Biafran War through the
+                  perspective of the characters Olanna, Ugwu, and Richard. It
+                  received critical acclaim and won the Women's Prize for
+                  Fiction in 2007.
+                </p>
+                <button class="action_btn cart_btn">
+                  <i class="fas fa-cart-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row card w70">
+            <div>
+              <img
+                class="column_photo"
+                src="assets/a-mind-for-numbers-book.png"
+                alt="A mind for numbers"
+              />
+            </div>
+            <div class="column">
+              <div class="milkandhoney">
+                <h4>Milk and Honey</h4>
+                <span>By Rupi Kaurt</span>
+              </div>
+              <!-- <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> -->
+              <ul class="book-stars">
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+                <li><img src="assets/star.png" alt="Star" /></li>
+              </ul>
+              <p>
+                <span class="digits">NGN2,500 </span
+                ><span class="smalldigits">N5,000</span>
+                <button class="qty_btn">
+                  <img src="./assets/qty_icon.png" /> Qty:
+                </button>
+              </p>
+              <div class="aboutbook2">
+                <h5>About Book</h5>
+                <p>
+                  Precolonial Black Africa is one of three major works by Cheikh
+                  Anta Diop that attempts to reconstruct African history and the
+                  black contribution to the foundations of Western civilization.
+                  In this book, Diop compares the political and social systems
+                  of Europe and black Africa from antiquity to the formation of
+                  modern states.
+                </p>
+                <button class="action_btn cart_btn">
+                  <i class="fas fa-cart-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h2>Browse More Books</h2>
+          <div class="row w70">
+            <div class="column card">
+              <img
+                class="book_photo"
+                src="assets/art-hero-image.png"
+                alt="art hero image"
+              />
+              <div style="padding: 0px 15px">
+                <h4>Art</h4>
+                <a href="science-page.html">
+                  <button class="action_btn science_btn">
+                    <i class="fas fa-globe"></i> Browse
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="column card">
+              <img
+                class="book_photo"
+                src="assets/science-hero-image.png"
+                alt="science hero image"
+              />
+              <div style="padding: 0px 15px">
+                <h4>Science</h4>
+                <a href="art-page.html">
+                  <button class="action_btn art_btn">
+                    <i class="fas fa-globe"></i> Browse
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row card w80">
+            <div class="col1">
+              <img
+                class="happy_people"
+                src="assets/about-us-image.png"
+                alt="About us"
+              />
+            </div>
+            <div class="col2">
+              <h3>About Us</h3>
+              <h4>Hello!</h4>
+              <p>
+                Bookify is an online platform that provides an extensive library
+                of Academic books <br />
+                for Nigerian Schools.<br />
+                With Bookify you'll have access to all educational books to keep
+                you going in any area.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--LANDING PAGE END-->
+
+      <!---///////////-->
+      <!--AUTH PAGE SECTION STARt-->
+      <section class="auth-page" id="auth-page">
         <div class="auth-page-btns">
-          <button
-            class="button auth-btns signup-btn"
-            id="auth-page-sign-up-btn"
-          >
+          <!--TOGGLE BUTTONS-->
+          <button class="auth-btns signup_btn" id="auth-page-sign-up-btn">
             Sign up
           </button>
-          <button class="button auth-btns login-btn" id="auth-page-log-in-btn">
+          <button class="auth-btns login_btn" id="auth-page-log-in-btn">
             Log in
           </button>
         </div>
-        <p>Glad to have you here to an</p>
-        <h2>Create Account</h2>
-        <p>Continue with</p>
-        <button id="google-btn">
-          <img src="assets/google-logo.png" alt="Google Logo" />
-          Signup with Google
-        </button>
-        <p>Already have an account? <a href="#">Log in</a></p>
-        <div class="dividers">
-          <img src="assets/divider.png" alt="Divider" />
-          <p>OR</p>
-          <img src="assets/divider.png" alt="Divider" />
+
+        <!--SIGNUP FORM SECTION-->
+        <div id="signup-page">
+          <div class="auth-body">
+            <div class="auth-body-text">
+              <p>Glad to have you here</p>
+              <h2>Create an Account</h2>
+              <!-- <span>Continue with</span> -->
+            </div>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <!-- <div class="google">
+              <button id="google-btn">
+                <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+                Google
+              </button>
+            </div> -->
+
+            <!-- <div class="dividers">
+              <p>OR</p>
+            </div> -->
+            <p class="email_pass">
+              Enter your email and password to create an account
+            </p>
+            <form class="auth-forms" id="sign_up_form">
+              <fieldset>
+                <!-- <legend>Email</legend> -->
+
+                <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <!-- <legend>Password</legend> -->
+
+                <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-1"
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <p class="password-error-message" id="password-1-err">
+                Password must be at least
+                <span id="8-chars-1">8 Characters</span>
+                and must contain at least a
+                <span id="capt-1">Capital Letter</span>, a
+                <span id="num-1">Number</span> and a
+                <span id="special-char-1">Special Character</span>.
+              </p>
+
+              <fieldset>
+                <!-- <legend>Password</legend> -->
+
+                <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input
+                    id="password-2"
+                    type="password"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <p class="password-error-message" id="password-2-err">
+                Password must be at least
+                <span id="8-chars-2">8 Characters</span>
+                and must contain at least a
+                <span id="capt-2">Capital Letter</span>, a
+                <span id="num-2">Number</span> and a
+                <span id="special-char-2">Special Character</span>.
+              </p>
+
+              <button class="button signup-btn big-btn" id="big-signup-btn">
+                Sign up
+              </button>
+              <p class="forgot">Forgot Password</p>
+            </form>
+          </div>
         </div>
 
-        <fieldset>
-          <legend>Email</legend>
-          <label>
-            <img src="assets/fi_mail.png" alt="Mail" />
-            <input type="text" placeholder="Your Email Address" />
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Password</legend>
-          <label>
-            <img src="assets/lock.png" alt="Lock" />
-            <input type="text" placeholder="Your Password" />
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Password</legend>
-          <label>
-            <img src="assets/fi_mail.png" alt="Mail" />
-            <input type="text" placeholder="Your Password" />
-          </label>
-        </fieldset>
+        <!-- LOGIN-->
+        <div id="login-page">
+          <div class="auth-body">
+            <div class="auth-body-text">
+              <p>Welcome!!!</p>
+              <!-- <span>Continue with</span> -->
+            </div>
 
-        <button class="button signup-btn" id="big-signup-btn">Sign up</button>
-        <p>Forgot Password</p>
+            <!-- <div class="google"> 
+       <button id="google-btn">
+              <img src="assets/google-logo.png" alt="Google Logo" /> Signup with
+              Google
+            </button>
+          </div> -->
+
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <!-- <div class="dividers">
+              <p>OR</p>
+            </div> -->
+            <p class="email_pass">
+              Enter your email and password to create an account
+            </p>
+            <form class="auth-forms" id="login_form">
+              <fieldset>
+                <!-- <legend>Email</legend> -->
+
+                <img src="assets/fi_mail.png" alt="Mail" />
+                <div class="field">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <!-- <legend>Password</legend> -->
+
+                <img src="assets/lock.png" alt="Lock" />
+                <div class="field">
+                  <label>Password</label>
+                  <input type="password" placeholder="Your Password" required />
+                </div>
+              </fieldset>
+
+              <button class="button active-btn big-btn" id="big-login-btn">
+                Log in
+              </button>
+              <p class="forgot">Forgot Password</p>
+            </form>
+          </div>
+        </div>
+
+        <!--AUTH SUCCESS SECTION-->
+        <section id="auth-success-page">
+          <div class="auth-success-body">
+            <img
+              src="assets/tick-square.png"
+              alt="Tick Square"
+              id="tick-square"
+            />
+            <p>Awesome!</p>
+
+            <h2>Successfully Signed in</h2>
+
+            <button class="button" id="return-to-home">Return to Home</button>
+          </div>
+        </section>
       </section>
+      <!--AUTH PAGE SECTION END-->
     </main>
+
+    <footer id="footer-section">
+      <section
+        id="bottom-nav
+      "
+      >
+        <div class="bottom-nav-top">
+          <div class="bottom-list product">
+            <h3>Product</h3>
+            <ul class="product-list">
+              <li class="product-list-item">Pricing</li>
+              <li class="product-list-item">Solutions</li>
+              <li class="product-list-item">Education</li>
+              <li class="product-list-item">Team plans</li>
+            </ul>
+          </div>
+          <div class="bottom-list about-us">
+            <h3>About Us</h3>
+            <ul class="about-us-list">
+              <li class="about-us-list-item">About</li>
+              <li class="about-us-list-item">Branding</li>
+              <li class="about-us-list-item">Newsroom</li>
+              <li class="about-us-list-item">Partnerships</li>
+              <li class="about-us-list-item">Affilates</li>
+              <li class="about-us-list-item">Careers</li>
+            </ul>
+          </div>
+          <div class="bottom-list help-support">
+            <h3>Help and support</h3>
+            <ul class="help-support-list">
+              <li class="help-support-list-item">Help center</li>
+              <li class="help-support-list-item">Contact us</li>
+              <li class="help-support-list-item">Privacy &amp; Terms</li>
+              <li class="help-support-list-item">Safety information</li>
+              <li class="help-support-list-item">Sitemap</li>
+            </ul>
+          </div>
+          <div class="bottom-list community">
+            <h3>Community</h3>
+            <ul class="community-list">
+              <li class="community-list-item">Agencies</li>
+              <li class="community-list-item">Freelancers</li>
+              <li class="community-list-item">Engineers</li>
+            </ul>
+          </div>
+          <div class="download-sites">
+            <div class="download-sites-btns" id="app-store-download">
+              <img
+                src="assets/app-store-download.png"
+                alt="App Store Download"
+              />
+            </div>
+            <div class="download-sites-btns" id="google-play-download">
+              <img
+                src="assets/google-play-download.png"
+                alt="Google Play Download"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav-bottom">
+          <p id="copyright">@copyright 2022</p>
+          <ul class="aid-links-list">
+            <li class="aid-links-list-item">Help</li>
+            <li class="aid-link-list-item">Privacy</li>
+            <li class="aid-link-list-item">Terms</li>
+          </ul>
+
+          <div class="social-media-icons">
+            <img
+              src="assets/facebook-logo.png"
+              alt="Facebook Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/twitter-logo.png"
+              alt="Twitter Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/instagram-logo.png"
+              alt="Instagram Logo"
+              class="social-media-icon"
+            />
+          </div>
+          <div class="dropdown">
+            <p>
+              English(United States)
+              <img src="assets/dropdown-icon.png" alt="Dropdown Icon" />
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

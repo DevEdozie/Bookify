@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+    "
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="assets/bookify-logo.png" alt="Bookify Logo" />
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="product-details-page.html">Home</a></li>
+          <li><a href="art-page.html">Art</a></li>
+          <li><a href="science-page.html">Science</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+        <form id="search-form">
+          <label for="search"
+            ><img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
+          /></label>
+          <input type="text" name="search" placeholder=" Search" id="search" />
+        </form>
+
+        <div id="header-auth-btns" class="button_container">
+          <button class="button login-btn">Log in</button>
+          <button class="button signup-btn">Sign up</button>
+        </div>
+
+        <a href="profile.html">
+          <div class="user-icon">
+            <img
+              src="assets/user-icon.png"
+              alt="User Icon"
+              id="user-icon-img"
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="container cart-page">
+        <div class="cart-title">
+          <h2>My Cart</h2>
+          <p>3 Books</p>
+        </div>
+
+        <div class="row cart-row">
+          <div class="col2">
+            <div class="row">
+              <div class="col2">
+                <img
+                  class="cart_book_photo"
+                  src="assets/a-mind-for-numbers-book.png"
+                  alt="book1"
+                />
+              </div>
+
+              <div class="col3">
+                <div class="milkandhoney">
+                  <h4>Milk and Honey</h4>
+                  <p>By Paul Jarvis</p>
+                </div>
+                <p><span class="digits">NGN2,500 </span></p>
+                <div class="aboutbook1">
+                  <button class="cart_btn">
+                    <i class="fas fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col2">
+                <img
+                  class="cart_book_photo"
+                  src="assets/a-mind-for-numbers-book.png"
+                  alt="book2"
+                />
+              </div>
+              <div class="col3">
+                <div class="milkandhoney">
+                  <h4>A Book Full of Hope</h4>
+                  <p>By Gray Sanders</p>
+                </div>
+                <p><span class="digits">NGN2,500 </span></p>
+                <div class="aboutbook2">
+                  <button class="cart_btn">
+                    <i class="fas fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col2">
+                <img
+                  class="cart_book_photo"
+                  src="assets/half-of-a-yellow-sun-book.png"
+                  alt="book3"
+                />
+              </div>
+              <div class="col3">
+                <div class="milkandhoney">
+                  <h4>How Innovation Works</h4>
+                  <p>By Matt Ridley</p>
+                </div>
+                <p><span class="digits">NGN2,500 </span></p>
+                <div class="aboutbook2">
+                  <button class="cart_btn">
+                    <i class="fas fa-cart-shopping"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col3">
+            <div class="summary">
+              <p class="shopping_summary">Shopping Summary</p>
+              <p class="subtotal">Subtotal (3 Books) &nbsp; NGN7500</p>
+              <p class="gst">
+                GST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NGN100
+              </p>
+              <p class="fee">
+                Shipping fee &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;Free
+              </p>
+              <hr />
+              <p class="amount">
+                Total Amount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;NGN7600
+              </p>
+              <button class="cart_btn">Proceed to Buy</button>
+              <p class="continue">Continue Shopping</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row foot-details">
+        <div class="column">
+          <div class="foot-row">
+            <img
+              class="col2 foot-photo"
+              src="./assets/quick_delivery.png"
+              alt="quick_delivery"
+            />
+            <div class="col3">
+              <h3>Quick Delivery</h3>
+              <p>
+                From Cart to Doorstep in No Time: <br />
+                Experience our lightening-fast delivery!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="foot-row">
+            <img
+              class="col2 foot-photo"
+              src="./assets/secure_payment.png"
+              alt="secure_payment"
+            />
+            <div class="col3">
+              <h3>Secure Payment</h3>
+              <p>
+                Safe and Secure Payment: We Priortize the security of your
+                transactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section
+        id="bottom-nav
+        "
+      >
+        <div class="bottom-nav-top">
+          <div class="bottom-list product">
+            <h3>Product</h3>
+            <ul class="product-list">
+              <li class="product-list-item">Pricing</li>
+              <li class="product-list-item">Solutions</li>
+              <li class="product-list-item">Education</li>
+              <li class="product-list-item">Team plans</li>
+            </ul>
+          </div>
+          <div class="bottom-list about-us">
+            <h3>About Us</h3>
+            <ul class="about-us-list">
+              <li class="about-us-list-item">About</li>
+              <li class="about-us-list-item">Branding</li>
+              <li class="about-us-list-item">Newsroom</li>
+              <li class="about-us-list-item">Partnerships</li>
+              <li class="about-us-list-item">Affilates</li>
+              <li class="about-us-list-item">Careers</li>
+            </ul>
+          </div>
+          <div class="bottom-list help-support">
+            <h3>Help and support</h3>
+            <ul class="help-support-list">
+              <li class="help-support-list-item">Help center</li>
+              <li class="help-support-list-item">Contact us</li>
+              <li class="help-support-list-item">Privacy &amp; Terms</li>
+              <li class="help-support-list-item">Safety information</li>
+              <li class="help-support-list-item">Sitemap</li>
+            </ul>
+          </div>
+          <div class="bottom-list community">
+            <h3>Community</h3>
+            <ul class="community-list">
+              <li class="community-list-item">Agencies</li>
+              <li class="community-list-item">Freelancers</li>
+              <li class="community-list-item">Engineers</li>
+            </ul>
+          </div>
+          <div class="download-sites">
+            <div class="download-sites-btns" id="app-store-download">
+              <img
+                src="assets/app-store-download.png"
+                alt="App Store Download"
+              />
+            </div>
+            <div class="download-sites-btns" id="google-play-download">
+              <img
+                src="assets/google-play-download.png"
+                alt="Google Play Download"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav-bottom">
+          <p id="copyright">@copyright 2022</p>
+          <ul class="aid-links-list">
+            <li class="aid-links-list-item">Help</li>
+            <li class="aid-link-list-item">Privacy</li>
+            <li class="aid-link-list-item">Terms</li>
+          </ul>
+
+          <div class="social-media-icons">
+            <img
+              src="assets/facebook-logo.png"
+              alt="Facebook Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/twitter-logo.png"
+              alt="Twitter Logo"
+              class="social-media-icon"
+            />
+            <img
+              src="assets/instagram-logo.png"
+              alt="Instagram Logo"
+              class="social-media-icon"
+            />
+          </div>
+          <div class="dropdown">
+            <p>
+              English(United States)
+              <img src="assets/dropdown-icon.png" alt="Dropdown Icon" />
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
