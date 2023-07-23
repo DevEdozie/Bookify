@@ -270,3 +270,25 @@ const aMindForNumbers = {
 function displayProductDetail() {}
 
 const bookTitle = document.getElementById("book-details-title");
+
+// LINKS
+// const homePageLink = document.getElementById("home-page-link");
+// const artPageLink = document.getElementById("art-page-link");
+// const sciencePageLink = document.getElementById("sscience-page-link");
+// const cartPageLink = document.getElementById("cart-page-link");
+
+// function displayActiveLink(link) {
+//   link.classList.add("active-link");
+// }
+
+// homePageLink.addEventListener("click", () => {
+//   displayActiveLink(homePageLink);
+//   console.log("Link clicked");
+// });
+
+// // homePageLink.classList.toggle("active-link");
+
+// artPageLink.addEventListener("click", () => {
+//   displayActiveLink(artPageLink);
+//   console.log("Link clicked");
+// });
