@@ -111,7 +111,9 @@ function loginUser() {
 }
 
 function activeUserDisplay() {
-  headerAuthButtons.style.display = "none";
+  loginButton.style.display = "none";
+  signUpButton.style.display = "none";
+  getStartedBtn.style.display = "none";
   userIcon.style.display = "flex";
 }
 
