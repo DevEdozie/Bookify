@@ -29,6 +29,10 @@ header {
   gap: 3rem;
 }
 
+#nav-bar {
+  display: none;
+}
+
 .header-nav {
   margin-left: 1rem;
   gap: 1rem;
@@ -46,8 +50,20 @@ header {
   margin-right: 4rem;
 }
 
-.header-nav-list li:hover,
-.header-nav-list li:visited {
+.header-nav-list li:hover {
+  margin-bottom: 0.2rem;
+  border-bottom: 2px solid #02a7a2;
+  color: #02a7a2;
+  font-weight: bolder;
+}
+.header-nav-list li:active {
+  margin-bottom: 0.2rem;
+  border-bottom: 2px solid #02a7a2;
+  color: #02a7a2;
+  font-weight: bolder;
+}
+
+.active-link {
   margin-bottom: 0.2rem;
   border-bottom: 2px solid #02a7a2;
   color: #02a7a2;
@@ -126,7 +142,8 @@ header {
   padding: 2rem;
   margin: 45px;
   border-radius: 12px;
-  display: none;
+  display: flex;
+  /* display: none; */
   box-shadow: 0px 4px 105px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -204,6 +221,17 @@ header {
 .auth-body-text span {
   font-size: 20px;
   margin-top: 30px;
+}
+
+.auth-page-fieldset {
+  width: 454px;
+  gap: 10px;
+  display: flex;
+  height: 58px;
+  padding: 8px 16px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #cfd3d4;
 }
 /* 
 .google {
@@ -400,14 +428,11 @@ header {
   border-radius: 25px;
   padding: 1rem;
   /*Change this to flex in js when the user signs in */
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
 }
 
-/*
-PRODUCT DETAIL STYLES
-*/
-
+/*PRODUCT DETAIL STYLES */
 .product-page {
   padding: 10rem;
 }
@@ -1269,8 +1294,9 @@ margin: 25px 0px;
   color: #4d4d4d;
   font-size: 30px;
   font-weight: bold;
-  /* background-color: red; */
 }
+/* background-color: red; */
+
 /* 
 fieldset img {
   font-size: 14px;
@@ -1357,6 +1383,11 @@ fieldset img {
   place-content: center;
 }
 
+.auth-page-navs {
+  color: #02a7a2;
+  cursor: pointer;
+}
+
 .home_btn {
   background-color: #02a7a2;
   width: 200px;
@@ -1373,6 +1404,7 @@ fieldset img {
   align-items: center;
   gap: 0.5rem;
   /* align-self: center; */
+  cursor: pointer;
 }
 
 .user_name {
@@ -1395,6 +1427,7 @@ fieldset img {
   border-color: #02a7a2;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .user_name h5 {
@@ -1403,25 +1436,3 @@ fieldset img {
   margin-bottom: auto;
   margin-left: 4px;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-
-/* @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-} */
-/* Responsive Design */
-
-/* @media (max-width: 992px) {
-  .navbar .links,
-  .navbar .action_btn {
-    display: none;
-  }
-  .navbar .toggle_btn {
-    display: block;
-  }
-  .dropdown_menu {
-    display: block;
-  }
-} */

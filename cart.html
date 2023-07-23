@@ -24,16 +24,21 @@
   </head>
   <body>
     <header>
+      <img id="nav-bar" src="assets/nav-bar.png" alt="Nav bar" />
       <a href="index.html">
         <img src="assets/bookify-logo.png" alt="Bookify Logo" />
       </a>
 
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="art-page.html">Art</a></li>
-          <li><a href="science-page.html">Science</a></li>
-          <li><a href="cart.html">Cart</a></li>
+          <li id="home-page-link"><a href="index.html">Home</a></li>
+          <li id="art-page-link"><a href="art-page.html">Art</a></li>
+          <li id="science-page-link">
+            <a href="science-page.html">Science</a>
+          </li>
+          <li class="active-link" id="cart-page-link">
+            <a href="cart.html">Cart</a>
+          </li>
         </ul>
 
         <form id="search-form">
