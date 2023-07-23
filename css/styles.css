@@ -23,19 +23,14 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border-bottom: 1px solid black;
-            padding-bottom: 1rem;
-            padding-top: 1rem; */
   height: 65px;
   border-bottom: 1px solid rgb(226, 218, 218);
   padding: 10px 145px;
-  gap: 8rem;
+  gap: 3rem;
 }
 
 .header-nav {
-  /* background-color: red; */
-  /* width: 850px; */
-  margin-left: 3rem;
+  margin-left: 1rem;
   gap: 1rem;
   display: flex;
   align-items: center;
@@ -44,12 +39,11 @@ header {
 
 .header-nav-list {
   display: flex;
-  /* background-color: green; */
   justify-content: space-around;
   align-items: center;
-  /* width: 186px; */
   gap: 1rem;
   font-size: 13px;
+  margin-right: 4rem;
 }
 
 .header-nav-list li:hover,
@@ -66,21 +60,15 @@ header {
   align-items: center;
 }
 
-#bookify-logo {
-  /* align-self: center;
-  text-align: center; */
-}
-
 #search-form {
   height: 45px;
   width: 12rem;
-  /* background-color: blue; */
+  margin-right: 3rem;
   display: flex;
   align-items: center;
   align-self: center;
   border-radius: 12px;
   border: 1px solid #cfd3d4;
-  /* padding-right: 2rem; */
 }
 
 #search {
@@ -98,14 +86,17 @@ header {
   width: 270px;
   height: 45px;
   gap: 10px;
-  /* background-color: green; */
   display: flex;
   align-items: center;
 }
 
+#header-auth-btns {
+  margin-right: 2rem;
+}
+
 .button {
   height: 45px;
-  width: 8rem;
+  width: 10rem;
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -130,16 +121,11 @@ header {
   background: white;
   max-width: 800px;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
-  /* margin: 45px auto 0;
-  margin-bottom: 40px; */
-  /* margin: 45px auto 0; */
   padding: 2rem;
   margin: 45px;
   border-radius: 12px;
-  /*WORK IN PROGRESS*/
   display: none;
   box-shadow: 0px 4px 105px 0px rgba(0, 0, 0, 0.1);
 }
@@ -219,7 +205,7 @@ header {
   font-size: 20px;
   margin-top: 30px;
 }
-
+/* 
 .google {
   width: 454px;
   height: 96px;
@@ -227,13 +213,6 @@ header {
   flex-direction: column;
   align-items: center;
 }
-/* .auth-btns {
-          padding: 3rem 4rem 3rem 6rem;
-      } */
-/* .dividers {
-            display: flex;
-            gap: 0.5rem;
-        } */
 
 #google-btn {
   width: 454px;
@@ -248,12 +227,6 @@ header {
   border: 1px solid #4d4d4d;
   font-size: 16px;
   background-color: white;
-  /* display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.5rem;
-            border-radius: 1rem;
-            background-color: pink; */
 }
 
 .google p {
@@ -279,7 +252,7 @@ header {
   border: 0.5px solid #dbdbdb;
   width: 15%;
   display: block;
-  /* top: -5px; */
+  
   position: absolute;
   right: 28rem;
   top: 30.4rem;
@@ -290,11 +263,11 @@ header {
   border: 0.5px solid #dbdbdb;
   width: 15%;
   display: block;
-  /* top: -5px; */
+  
   position: absolute;
   left: 28rem;
   top: 30.4rem;
-}
+} */
 
 .email_pass {
   font-size: 14px;
@@ -302,33 +275,14 @@ header {
   margin-bottom: 15px;
   color: #4d4d4d;
 }
-/* 
-#sign_up_form {
-  height: 500px;
-  width: 454px;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
 
-#login_form {
-  height: 500px;
-  width: 454px;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-} */
-
-fieldset {
+.profile-page-fieldset {
   width: 454px;
   gap: 10px;
   display: flex;
   height: 58px;
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  padding-left: 0.5rem;
   align-items: center;
   border-radius: 8px;
   border: 1px solid #cfd3d4;
@@ -367,13 +321,6 @@ fieldset {
   color: #5e6366;
 }
 
-/* #big-signup-btn {
-  width: 453px;
-  border-radius: 12px;
-  height: 3rem;
-  font-size: 16px;
-  margin-top: 10px;
-} */
 .big-btn {
   width: 453px;
   border-radius: 12px;
@@ -385,11 +332,6 @@ fieldset {
 .forgot {
   margin-top: 15px;
 }
-
-/* #big-signup-btn:hover {
-  /* background-color: #08bd35;
-                                            
-} */
 
 .password-error-message {
   color: #abafb1;
@@ -408,22 +350,9 @@ fieldset {
   color: lightgreen;
 }
 
-/* 
-.success {
-  color: green;
-}
-
-.password-error-message {
-  display: none;
-}  */
-
 #login-page {
   display: none;
 }
-
-/* signup-page {
-  display: none;
-} */
 
 #auth-success-page {
   display: none;
@@ -450,25 +379,16 @@ fieldset {
 
 .active-btn {
   background-color: #02a7a2;
-  /* border: none; */
   outline: none;
   color: white;
-  /* border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px; */
 }
 
 .inactive-btn {
   background-color: white;
-  /* border: none; */
+
   outline: none;
   color: black;
-  /* border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px; */
 }
-
-/*
-PRODUCT DETAIL STYLES
-*/
 
 .user-icon {
   background-color: #02a7a2;
@@ -480,9 +400,13 @@ PRODUCT DETAIL STYLES
   border-radius: 25px;
   padding: 1rem;
   /*Change this to flex in js when the user signs in */
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
 }
+
+/*
+PRODUCT DETAIL STYLES
+*/
 
 .product-page {
   padding: 10rem;
@@ -491,7 +415,6 @@ PRODUCT DETAIL STYLES
 .book-details {
   display: flex;
   justify-content: space-evenly;
-  /* padding: 10rem; */
   gap: 3rem;
 }
 
@@ -499,12 +422,16 @@ PRODUCT DETAIL STYLES
   width: 50%;
 }
 
+.book-details-img img {
+  height: 100%;
+}
+
 .book-details-desc {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* gap: 2rem; */
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .book-img {
@@ -714,6 +641,21 @@ footer {
 
 /*LANDING PAGE STYLING*/
 
+.qty_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #02a7a2;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Dropdown Menu */
 
 .dropdown_menu {
@@ -762,17 +704,6 @@ footer {
 
 .checked {
   color: orange;
-}
-
-.qty_btn {
-  background-color: #02a7a2;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .cart_btn {
@@ -850,6 +781,9 @@ footer {
 
 #get-started-btn {
   background-color: rgb(236, 156, 6);
+  height: 4rem;
+  width: 20rem;
+  margin-top: 1rem;
   color: #ffffff;
   padding: 0.5rem 4.5rem;
   border: none;
@@ -879,7 +813,7 @@ footer {
   background-color: white;
   display: flex;
   padding: 25px;
-  gap: 4rem;
+  gap: 1rem;
   height: 100%;
   align-items: center;
   margin: 25px 0px;
@@ -1090,19 +1024,71 @@ ART/SCIENCE PAGE STYLES
 */
 
 .product-page-contents {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
+}
+
+.product-page-heading {
+  align-self: flex-start;
 }
 
 /* Cart Page */
 
 .cart-page {
-  align-items: unset;
-  justify-content: unset;
-  padding: 3rem 7rem;
-  /* width: 70%; */
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
+/*MY style*/
+
+.cart-page-contents {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.cart-books-list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+.cart-books-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.cart-books-list-item-img {
+  width: 50%;
+}
+.cart-books-list-item-img img {
+  width: 100%;
+}
+
+.cart-books-list-item-desc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart-shopping-summary {
+  width: 50%;
+  align-self: center;
+}
+
+.cart-shopping-summary-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*MY style-end*/
 
 .cart-title h2 {
   font-size: 34px;

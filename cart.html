@@ -30,7 +30,7 @@
 
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="product-details-page.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="art-page.html">Art</a></li>
           <li><a href="science-page.html">Science</a></li>
           <li><a href="cart.html">Cart</a></li>
@@ -63,16 +63,80 @@
       </nav>
     </header>
     <main>
-      <div class="container cart-page">
+      <div class="cart-page">
         <div class="cart-title">
           <h2>My Cart</h2>
           <p>3 Books</p>
         </div>
 
-        <div class="row cart-row">
-          <div class="col2">
-            <div class="row">
-              <div class="col2">
+        <div class="cart-page-contents">
+          <div class="cart-books-list">
+            <div class="cart-books-list-item">
+              <div class="cart-books-list-item-img">
+                <img
+                  class="cart_book_photo"
+                  src="assets/half-of-a-yellow-sun-book.png"
+                  alt="book1"
+                />
+              </div>
+
+              <div class="cart-books-list-item-desc">
+                <div class="cart-books-list-item-desc-heading">
+                  <h4>A Book Full of Hope</h4>
+                  <p>By Paul Jarvis</p>
+                </div>
+                <p><span class="digits">NGN2,500 </span></p>
+                <div class="analytics">
+                  <!-- <div class="prices">
+                    <p class="new-price">N2500</p>
+                  </div> -->
+                  <div class="counter">
+                    <div class="box operator minus-sign"><p>-</p></div>
+                    <div class="box count-display">
+                      <p class="count-display-no"></p>
+                    </div>
+                    <div class="box operator plus-sign"><p>+</p></div>
+                  </div>
+                  <div class="box operator cart-del-btn">
+                    <img src="assets/bin-dark.png" alt="Bin" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-books-list-item">
+              <div class="cart-books-list-item-img">
+                <img
+                  class="cart_book_photo"
+                  src="assets/gene-book.png"
+                  alt="book1"
+                />
+              </div>
+
+              <div class="cart-books-list-item-desc">
+                <div class="cart-books-list-item-desc-heading">
+                  <h4>How Innovattion Works</h4>
+                  <p>By Paul Jarvis</p>
+                </div>
+                <p><span class="digits">NGN2,500 </span></p>
+                <div class="analytics">
+                  <!-- <div class="prices">
+                    <p class="new-price">N2500</p>
+                  </div> -->
+                  <div class="counter">
+                    <div class="box operator minus-sign"><p>-</p></div>
+                    <div class="box count-display">
+                      <p class="count-display-no"></p>
+                    </div>
+                    <div class="box operator plus-sign"><p>+</p></div>
+                  </div>
+                  <div class="box operator cart-del-btn">
+                    <img src="assets/bin-dark.png" alt="Bin" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-books-list-item">
+              <div class="cart-books-list-item-img">
                 <img
                   class="cart_book_photo"
                   src="assets/a-mind-for-numbers-book.png"
@@ -80,84 +144,53 @@
                 />
               </div>
 
-              <div class="col3">
-                <div class="milkandhoney">
+              <div class="cart-books-list-item-desc">
+                <div class="cart-books-list-item-desc-heading">
                   <h4>Milk and Honey</h4>
                   <p>By Paul Jarvis</p>
                 </div>
                 <p><span class="digits">NGN2,500 </span></p>
-                <div class="aboutbook1">
-                  <button class="cart_btn">
-                    <i class="fas fa-cart-shopping"></i> Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col2">
-                <img
-                  class="cart_book_photo"
-                  src="assets/a-mind-for-numbers-book.png"
-                  alt="book2"
-                />
-              </div>
-              <div class="col3">
-                <div class="milkandhoney">
-                  <h4>A Book Full of Hope</h4>
-                  <p>By Gray Sanders</p>
-                </div>
-                <p><span class="digits">NGN2,500 </span></p>
-                <div class="aboutbook2">
-                  <button class="cart_btn">
-                    <i class="fas fa-cart-shopping"></i> Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col2">
-                <img
-                  class="cart_book_photo"
-                  src="assets/half-of-a-yellow-sun-book.png"
-                  alt="book3"
-                />
-              </div>
-              <div class="col3">
-                <div class="milkandhoney">
-                  <h4>How Innovation Works</h4>
-                  <p>By Matt Ridley</p>
-                </div>
-                <p><span class="digits">NGN2,500 </span></p>
-                <div class="aboutbook2">
-                  <button class="cart_btn">
-                    <i class="fas fa-cart-shopping"></i> Add to Cart
-                  </button>
+                <div class="analytics">
+                  <!-- <div class="prices">
+                    <p class="new-price">N2500</p>
+                  </div> -->
+                  <div class="counter">
+                    <div class="box operator minus-sign"><p>-</p></div>
+                    <div class="box count-display">
+                      <p class="count-display-no"></p>
+                    </div>
+                    <div class="box operator plus-sign"><p>+</p></div>
+                  </div>
+                  <div class="box operator cart-del-btn">
+                    <img src="assets/bin-dark.png" alt="Bin" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col3">
-            <div class="summary">
-              <p class="shopping_summary">Shopping Summary</p>
-              <p class="subtotal">Subtotal (3 Books) &nbsp; NGN7500</p>
-              <p class="gst">
-                GST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NGN100
-              </p>
-              <p class="fee">
-                Shipping fee &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;Free
-              </p>
-              <hr />
-              <p class="amount">
-                Total Amount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;NGN7600
-              </p>
-              <button class="cart_btn">Proceed to Buy</button>
-              <p class="continue">Continue Shopping</p>
+          <div class="cart-shopping-summary">
+            <div class="col3">
+              <div class="summary">
+                <p class="shopping_summary">Shopping Summary</p>
+                <p class="subtotal">Subtotal (3 Books) &nbsp; NGN7500</p>
+                <p class="gst">
+                  GST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NGN100
+                </p>
+                <p class="fee">
+                  Shipping fee &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;Free
+                </p>
+                <hr />
+                <p class="amount">
+                  Total Amount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp;NGN7600
+                </p>
+                <div class="cart-shopping-summary-nav">
+                  <button class="cart_btn">Proceed to Buy</button>
+                  <p class="continue">Continue Shopping</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +201,7 @@
           <div class="foot-row">
             <img
               class="col2 foot-photo"
-              src="./assets/quick_delivery.png"
+              src="assets/zap-light.png"
               alt="quick_delivery"
             />
             <div class="col3">
@@ -185,7 +218,7 @@
           <div class="foot-row">
             <img
               class="col2 foot-photo"
-              src="./assets/secure_payment.png"
+              src="assets/shield-light.png"
               alt="secure_payment"
             />
             <div class="col3">
@@ -292,5 +325,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
