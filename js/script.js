@@ -47,28 +47,6 @@ const cartButton = document.querySelector(".cart_btn");
 
 cartButton.addEventListener("click", addToCart);
 
-
-
-const toggleBtn = document.querySelector('.toggle-btn');
-const toggleBtnIcon = document.querySelector('.toggle-btn i');
-const dropDown = document.querySelector('.dropdown-menu');
-const regDiv = document.querySelector('.button_container');
-
-toggleBtn.addEventListener('click', () => {
-  dropDown.classList.toggle('open');
-  
-  const isOpen = dropDown.classList.contains('open');
-
-  toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-})
-
-regDiv.addEventListener('click', () => {
-  dropDown.classList.remove('open');
-  toggleBtnIcon.classList = 'fa-solid fa-bars';
-})
-
-
-
 // CART BUTTON LISTENER
 function addToCart() {
   // IF USER IS NOT SIGNED IN
@@ -292,3 +270,25 @@ const aMindForNumbers = {
 function displayProductDetail() {}
 
 const bookTitle = document.getElementById("book-details-title");
+
+// LINKS
+// const homePageLink = document.getElementById("home-page-link");
+// const artPageLink = document.getElementById("art-page-link");
+// const sciencePageLink = document.getElementById("sscience-page-link");
+// const cartPageLink = document.getElementById("cart-page-link");
+
+// function displayActiveLink(link) {
+//   link.classList.add("active-link");
+// }
+
+// homePageLink.addEventListener("click", () => {
+//   displayActiveLink(homePageLink);
+//   console.log("Link clicked");
+// });
+
+// // homePageLink.classList.toggle("active-link");
+
+// artPageLink.addEventListener("click", () => {
+//   displayActiveLink(artPageLink);
+//   console.log("Link clicked");
+// });
