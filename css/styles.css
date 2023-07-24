@@ -743,6 +743,9 @@ footer {
   width: 20rem;
   height: 3rem;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .science_btn {
@@ -1111,6 +1114,7 @@ ART/SCIENCE PAGE STYLES
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  text-align: center;
 }
 
 /*MY style-end*/
@@ -1435,4 +1439,249 @@ fieldset img {
   font-weight: bold;
   margin-bottom: auto;
   margin-left: 4px;
+
+/* Payment */
+#payment{
+  height: 100%;
+  /* background-color: green; */
+}
+.payment-method{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem;
+  text-align: center;
+}
+.payment-method h2{
+  font-size: 38px;
+  color: #02A7A2;
+}
+.payment-top{
+  margin-top: 4rem;
+  display: flex;flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.payment-top img{
+  width: 20rem;
+}
+.payment-top h4{
+  color: #4D4D4D;
+  font-size: 30px;
+  font-weight: 900;
+
+}
+.payment-bottom h2{
+  color: #4D4D4D;
+  font-weight: 800;
+}
+.payment-bottom-1 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.payment-bottom-1 img{
+  border: 1px solid #8F8F8F;
+  border-radius: 10px;
+  width: 90%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+
+
+/* Media query */
+@media screen and (max-width: 1170px) {
+  footer {
+    padding: 5rem;
+    background: #ccf4f3;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .download-sites{
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #search-form{
+    display: none;
+  }
+  .access h1 {
+    font-size: 30px;
+  }
+  .row{
+    width: 80%;
+  }
+  .about-book{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 880px) {
+  header{
+    padding: 0px 0px;
+  }
+  .header-nav-list,
+  .button_container,
+  #search,
+  .header-nav{
+    display: none;
+  }
+  #search-form{
+    border: none;
+  }
+  .right-Div{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .button_container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .button_container a{
+    width: 13rem;
+    height: 4rem;
+    font-size: 14px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+  }
+  .toggle-btn{
+    display: block;
+    font-size: 2.5rem;
+  }
+  .dropdown-menu .cta-reg a{
+    padding: .5rem 3rem;
+    outline: none;
+  }
+  .dropdown-menu{
+    display: block;
+  }
+  .book-details{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+  }
+  .row{
+    height: 20%;
+  }
+  .book-details-img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .book-img{
+    width: 50%;
+  }
+  .book-details-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .cart_btn{
+    width: 55%;
+  }
+  .aid-links-list{
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .aboutUs{
+    flex-direction: column;
+    display: flex;
+  }
+  .happy_people{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .dropdown,
+  .community{
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .cart_btn{
+    width: 75%;
+    font-size: 14px;
+  }
+  .bottom-nav-top{
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+  footer {
+    padding: 3rem;
+    background: #ccf4f3;
+  }
+  .bottom-nav-bottom{
+    gap: 0;
+    align-items: center;
+    padding: 0;
+  }
+ 
+}
+@media screen and (max-width: 550px) {
+  header{
+    padding: 10px 30px;
+  }
+  .access h1{
+    font-size: 20px;
+  }
+  #get-started-btn{
+    width: 70%;
+    font-size: 12px;
+    height: 3rem;
+  } 
+  #search-icon{
+    display: none;
+  }
+  .row{
+    width: 100%;
+  }
+  .social-media-icons {
+    gap: 1rem;
+    margin-right: 0;
+  }
+  #copyright{
+    margin-left: 0;
+  }
+  .analytics{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+  }
+  .button_container a{
+    width: 9rem;
+    height: 3rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+  }
+}
+@media screen and (max-width: 350px) {
+  .right-Div{
+    display: none;
+  }
 }
