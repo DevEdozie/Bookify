@@ -24,18 +24,65 @@
   </head>
   <body>
     <header>
-      <img id="nav-bar" src="assets/nav-bar.png" alt="Nav bar" />
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdown-menu">
+        <ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="art-page.html"> Art </a> </li>
+          <li> <a href="science-page.html"> Science </a> </li>
+          <li> <a href="cart.html"> Cart </a> </li>
+        </ul>
+        <div class="button_container" id="header-auth-btns">
+          <a class="button login-btn">Log in</a>
+          <a class="button signup-btn">Sign up</a>
+        </div>
+      </div>
+
       <a href="index.html">
-        <img src="assets/bookify-logo.png" alt="Bookify Logo" />
+        <img
+          id="bookify-logo"
+          src="assets/bookify-logo.png"
+          alt="Bookify Logo"
+        />
       </a>
 
+      <div class="right-Div">
+        <img
+              id="search-icon"
+              src="assets/search-icon.png"
+              alt="Search Icon"
+          />
+          <a href="profile.html">
+            <div class="user-icon">
+              <img
+                src="assets/user-icon.png"
+                alt="User Icon"
+                id="user-icon-img"
+              />
+            </div>
+          </a>
+
+      </div>
+
+
+
+
+
+      <img id="nav-bar" src="assets/nav-bar.png" alt="Nav bar">
+      <!-- <a href="index.html">
+        <img
+          id="bookify-logo"
+          src="assets/bookify-logo.png"
+          alt="Bookify Logo"
+        />
+      </a> -->
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li id="home-page-link"><a href="index.html">Home</a></li>
+          <li class="active-link" id="home-page-link"><a href="index.html">Home</a></li>
           <li id="art-page-link"><a href="art-page.html">Art</a></li>
-          <li id="science-page-link">
-            <a href="science-page.html">Science</a>
-          </li>
+          <li id="science-page-link"><a href="science-page.html">Science</a></li>
           <li id="cart-page-link"><a href="cart.html">Cart</a></li>
         </ul>
 
@@ -52,6 +99,13 @@
         <div id="header-auth-btns" class="button_container">
           <button class="button login-btn">Log in</button>
           <button class="button signup-btn">Sign up</button>
+
+          <!-- <a href="auth.html">
+            <button class="button login-btn">Log in</button>
+          </a>
+         <a href="auth.html"> -->
+          
+         </a>
         </div>
 
         <a href="profile.html">
