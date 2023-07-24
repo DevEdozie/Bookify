@@ -45,6 +45,24 @@ const userIcon = document.querySelector(".user-icon");
 // CART BUTTON
 const cartButton = document.querySelector(".cart_btn");
 
+const toggleBtn = document.querySelector(".toggle-btn");
+const toggleBtnIcon = document.querySelector(".toggle-btn i");
+const dropDown = document.querySelector(".dropdown-menu");
+const regDiv = document.querySelector(".button_container");
+
+toggleBtn.addEventListener("click", () => {
+  dropDown.classList.toggle("open");
+
+  const isOpen = dropDown.classList.contains("open");
+
+  toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+});
+
+regDiv.addEventListener("click", () => {
+  dropDown.classList.remove("open");
+  toggleBtnIcon.classList = "fa-solid fa-bars";
+});
+
 cartButton.addEventListener("click", addToCart);
 
 // CART BUTTON LISTENER
