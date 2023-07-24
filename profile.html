@@ -29,22 +29,7 @@
   </head>
   <body>
     <header>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="dropdown-menu">
-        <ul>
-          <li> <a href="index.html"> Home </a> </li>
-          <li> <a href="art-page.html"> Art </a> </li>
-          <li> <a href="science-page.html"> Science </a> </li>
-          <li> <a href="cart.html"> Cart </a> </li>
-        </ul>
-        <div class="button_container" id="header-auth-btns">
-          <a class="button login-btn">Log in</a>
-          <a class="button signup-btn">Sign up</a>
-        </div>
-      </div>
-
+      <img id="nav-bar" src="assets/nav-bar.png" alt="Nav bar" />
       <a href="index.html">
         <img
           id="bookify-logo"
@@ -52,29 +37,14 @@
           alt="Bookify Logo"
         />
       </a>
-      <div class="right-Div">
-        <img
-              id="search-icon"
-              src="assets/search-icon.png"
-              alt="Search Icon"
-          />
-          <a href="profile.html">
-            <div class="user-icon">
-              <img
-                src="assets/user-icon.png"
-                alt="User Icon"
-                id="user-icon-img"
-              />
-            </div>
-          </a>
-
-      </div>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="art-page.html">Art</a></li>
-          <li><a href="science-page.html">Science</a></li>
-          <li><a href="cart.html">Cart</a></li>
+          <li id="home-page-link"><a href="index.html">Home</a></li>
+          <li id="art-page-link"><a href="art-page.html">Art</a></li>
+          <li id="science-page-link">
+            <a href="science-page.html">Science</a>
+          </li>
+          <li id="cart-page-link"><a href="cart.html">Cart</a></li>
         </ul>
 
         <form id="search-form">
@@ -102,7 +72,6 @@
           </div>
         </a>
       </nav>
-
     </header>
     <main>
       <section class="profile-page-section">

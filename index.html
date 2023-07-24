@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -27,24 +26,8 @@
   </head>
 
   <body>
-    
     <header>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="dropdown-menu">
-        <ul>
-          <li> <a href="index.html"> Home </a> </li>
-          <li> <a href="art-page.html"> Art </a> </li>
-          <li> <a href="science-page.html"> Science </a> </li>
-          <li> <a href="cart.html"> Cart </a> </li>
-        </ul>
-        <div class="button_container" id="header-auth-btns">
-          <a class="button login-btn">Log in</a>
-          <a class="button signup-btn">Sign up</a>
-        </div>
-      </div>
-
+      <img id="nav-bar" src="assets/nav-bar.png" alt="Nav bar">
       <a href="index.html">
         <img
           id="bookify-logo"
@@ -52,29 +35,12 @@
           alt="Bookify Logo"
         />
       </a>
-      <div class="right-Div">
-        <img
-              id="search-icon"
-              src="assets/search-icon.png"
-              alt="Search Icon"
-          />
-          <a href="profile.html">
-            <div class="user-icon">
-              <img
-                src="assets/user-icon.png"
-                alt="User Icon"
-                id="user-icon-img"
-              />
-            </div>
-          </a>
-
-      </div>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="art-page.html">Art</a></li>
-          <li><a href="science-page.html">Science</a></li>
-          <li><a href="cart.html">Cart</a></li>
+          <li class="active-link" id="home-page-link"><a href="index.html">Home</a></li>
+          <li id="art-page-link"><a href="art-page.html">Art</a></li>
+          <li id="science-page-link"><a href="science-page.html">Science</a></li>
+          <li id="cart-page-link"><a href="cart.html">Cart</a></li>
         </ul>
 
         <form id="search-form">
@@ -90,6 +56,13 @@
         <div id="header-auth-btns" class="button_container">
           <button class="button login-btn">Log in</button>
           <button class="button signup-btn">Sign up</button>
+
+          <!-- <a href="auth.html">
+            <button class="button login-btn">Log in</button>
+          </a>
+         <a href="auth.html"> -->
+          
+         </a>
         </div>
 
         <a href="profile.html">
@@ -102,7 +75,6 @@
           </div>
         </a>
       </nav>
-
     </header>
     <main id="main-section">
       <!--LANDING PAGE START-->
@@ -279,8 +251,8 @@
           </div>
         </div>
 
-        <div class="container ">
-          <div class="row card w80 aboutUs">
+        <div class="container">
+          <div class="row card w80">
             <div class="col1">
               <img
                 class="happy_people"
@@ -326,13 +298,13 @@
               <h2>Create an Account</h2>
               <!-- <span>Continue with</span> -->
             </div>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p>Already have an account? <span onclick="loginClicked()" class="auth-page-navs" >Log in<span/></>
 
             <p class="email_pass">
               Enter your email and password to create an account
             </p>
             <form class="auth-forms" id="sign_up_form">
-              <fieldset>
+              <fieldset class="auth-page-fieldset">
                 <img src="assets/fi_mail.png" alt="Mail" />
                 <div class="field">
                   <label>Email</label>
@@ -343,7 +315,7 @@
                   />
                 </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="auth-page-fieldset">
                 <img src="assets/lock.png" alt="Lock" />
                 <div class="field">
                   <label>Password</label>
@@ -364,7 +336,7 @@
                 <span id="special-char-1">Special Character</span>.
               </p>
 
-              <fieldset>
+              <fieldset class="auth-page-fieldset">
                 <img src="assets/lock.png" alt="Lock" />
                 <div class="field">
                   <label>Password</label>
@@ -399,13 +371,13 @@
               <p>Welcome!!!</p>
             </div>
 
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <p>Don't have an account? <span class="auth-page-navs"  onclick="signUpClicked()"  >Sign up<span/></>
 
             <p class="email_pass">
               Enter your email and password to create an account
             </p>
             <form class="auth-forms" id="login_form">
-              <fieldset>
+              <fieldset class="auth-page-fieldset">
                 <img src="assets/fi_mail.png" alt="Mail" />
                 <div class="field">
                   <label>Email</label>
@@ -416,7 +388,7 @@
                   />
                 </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="auth-page-fieldset">
                 <img src="assets/lock.png" alt="Lock" />
                 <div class="field">
                   <label>Password</label>
